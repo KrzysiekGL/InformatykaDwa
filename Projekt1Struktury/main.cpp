@@ -39,6 +39,9 @@ int main(int argc, const char * argv[]) {
     std::cin>>min>>max;
     znajdzZPrzedzialuCen(album, min, max);
     
+    //zadanie 4
+    
+    
     plytaDestructor(kazik); //trzeba po sobie posprzatac jak sie uzywa operatora "new"
     return 0;
 }
