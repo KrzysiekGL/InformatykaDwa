@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20FD8572216E7D15003102B9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FD8571216E7D15003102B9 /* main.cpp */; };
+		20FD857A216E96D9003102B9 /* wszystkieFunkcje.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FD8578216E96D9003102B9 /* wszystkieFunkcje.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		20FD856E216E7D15003102B9 /* Projekt1Struktury */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Projekt1Struktury; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FD8571216E7D15003102B9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		20FD8578216E96D9003102B9 /* wszystkieFunkcje.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wszystkieFunkcje.cpp; sourceTree = "<group>"; };
+		20FD8579216E96D9003102B9 /* wszystkieFunkcje.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = wszystkieFunkcje.hpp; sourceTree = "<group>"; };
+		20FD857B216E9708003102B9 /* Plyta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Plyta.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				20FD8571216E7D15003102B9 /* main.cpp */,
+				20FD8578216E96D9003102B9 /* wszystkieFunkcje.cpp */,
+				20FD8579216E96D9003102B9 /* wszystkieFunkcje.hpp */,
+				20FD857B216E9708003102B9 /* Plyta.hpp */,
 			);
 			path = Projekt1Struktury;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FD857A216E96D9003102B9 /* wszystkieFunkcje.cpp in Sources */,
 				20FD8572216E7D15003102B9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
