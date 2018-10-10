@@ -37,9 +37,9 @@ void plytaDestructor(Plyta& plyta){
 }
 
 void wydrukujPlyte(Plyta& plyta){
-    std::cout<<"Plyta "<<plyta.tytul<<" posiada az "<<plyta.iloscUtworow<<" utworow muzycznych.\n"
+    std::cout<<"\nPlyta "<<plyta.tytul<<" posiada az "<<plyta.iloscUtworow<<" utworow muzycznych.\n"
     <<"Za marne "<<plyta.cena<<" zlotych to super okazja!\n"
-    <<"A juz napewno dla fanow "<<plyta.gatunek<<"!\n";
+    <<"A juz napewno dla fanow "<<plyta.gatunek<<"!\n\n";
 }
 
 void przepiszTablice(std::string& zT, char* doT){
@@ -58,4 +58,11 @@ void znajdzNajtanszaPlyte(Plyta* plyta){
         }
     }
     wydrukujPlyte(plyta[lowestPriceIndex]);
+}
+
+void znajdzZPrzedzialuCen(Plyta* plyta, float min, float max){
+    for(int i=0; i<5; ++i){
+        if(plyta[i].cena>=min && plyta[i].cena<=max)
+            wydrukujPlyte(plyta[i]);
+    }
 }
