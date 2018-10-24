@@ -1,0 +1,15 @@
+﻿  Source.cpp
+d:\uczelnia\informatyka 2\informatyka dwa\informatykadwa\projekt2klasy\projekt2klasy\wynik.h(20): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+d:\uczelnia\informatyka 2\informatyka dwa\informatykadwa\projekt2klasy\projekt2klasy\source.cpp(12): warning C4305: 'argument': truncation from 'double' to 'float'
+  Wynik.cpp
+d:\uczelnia\informatyka 2\informatyka dwa\informatykadwa\projekt2klasy\projekt2klasy\wynik.h(20): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+  Generating Code...
+  Projekt2Klasy.vcxproj -> D:\uczelnia\Informatyka 2\Informatyka Dwa\InformatykaDwa\Projekt2Klasy\Projekt2Klasy\Debug\Projekt2Klasy.exe
