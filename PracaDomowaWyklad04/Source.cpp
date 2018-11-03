@@ -4,9 +4,13 @@
 
 #include "Menu.h"
 #include "NPC.h"
+#include "Player.h"
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML menu/movement/collision(?) demo");
+	window.setFramerateLimit(60);
+	window.setKeyRepeatEnabled(true);
+
 	sf::Event event;
 	sf::Clock clock;
 	float deltaTime;
@@ -16,8 +20,9 @@ int main() {
 	Menu menu(window.getSize());
 
 	//Entities
-	NPC prop1(sf::Vector2u(100,100), sf::Color::Green, 0, 0);
-	NPC prop2(sf::Vector2u(200,300), sf::Color::Red, 0, 5);
+	NPC prop1(sf::Vector2u(400, 300), sf::Color::Green, 0);
+	NPC prop2(sf::Vector2u(200, 300), sf::Color::Red, 5000);
+	Player player(sf::Vector2f(100, 100), sf::Color::White, 150);
 
 	while (window.isOpen()){
 		deltaTime = clock.restart().asSeconds();
@@ -61,8 +66,12 @@ int main() {
 
 		if(isMenuLaunched) menu.draw(window);
 		if (!isMenuLaunched) {
+			player.updatePosition(deltaTime);
 			prop1.drawNPC(window);
 			prop2.drawNPC(window);
+			player.drawPlayer(window);
+			prop2.collision(prop1);
+			prop2.collision(player);
 			prop2.moveShapeInWindow(window);
 		}
 

@@ -29,9 +29,6 @@ void Menu::setMenuEntrysPosition() {
 	for (int i = 0; i < menu.size(); ++i) {
 		menu[i].setOrigin(sf::Vector2f(menu[i].getLocalBounds().width/2, menu[i].getLocalBounds().height/2));
 		menu[i].setPosition(sf::Vector2f(size.x / 2, size.y / 3 + size.y / (menu.size() + 1) * i));
-		std::cout << "menu element " << i <<
-					" position is set to: x=" << menu[i].getPosition().x <<
-					" y=" << menu[i].getPosition().y << '\n';
 	}
 }
 
