@@ -1,0 +1,14 @@
+﻿  Pokeball.cpp
+  Source.cpp
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt04animacjesfml\source.cpp(14): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt04animacjesfml\source.cpp(17): warning C4244: '=': conversion from 'sf::Int64' to 'float', possible loss of data
+  Generating Code...
+  Projekt04AnimacjeSFML.vcxproj -> D:\uczelnia\Informatyka 2\InfDwa\InformatykaDwa\Projekt04AnimacjeSFML\x64\Debug\Projekt04AnimacjeSFML.exe
