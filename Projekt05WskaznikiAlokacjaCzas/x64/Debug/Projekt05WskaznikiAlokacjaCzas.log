@@ -1,0 +1,10 @@
+﻿  Source.cpp
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(20): warning C4244: '=': conversion from 'sf::Int32' to 'float', possible loss of data
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(27): warning C4244: '=': conversion from 'sf::Int32' to 'float', possible loss of data
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(44): warning C4311: 'type cast': pointer truncation from 'double *' to 'int'
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(44): warning C4302: 'type cast': truncation from 'double *' to 'int'
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(45): warning C4311: 'type cast': pointer truncation from 'int *' to 'int'
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(45): warning C4302: 'type cast': truncation from 'int *' to 'int'
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(45): warning C4311: 'type cast': pointer truncation from 'double *' to 'int'
+d:\uczelnia\informatyka 2\infdwa\informatykadwa\projekt05wskaznikialokacjaczas\source.cpp(45): warning C4302: 'type cast': truncation from 'double *' to 'int'
+  Projekt05WskaznikiAlokacjaCzas.vcxproj -> D:\uczelnia\Informatyka 2\InfDwa\InformatykaDwa\Projekt05WskaznikiAlokacjaCzas\x64\Debug\Projekt05WskaznikiAlokacjaCzas.exe
