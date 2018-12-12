@@ -1,0 +1,17 @@
+#ifndef TABLICAH
+#define TABLICAH
+
+class Tablica{
+	protected:
+		int size;
+		int *taTablica;
+
+	public:
+		Tablica(int size);
+		~Tablica();
+
+		void drukuj();
+		void wypelnij();
+};
+
+#endif //TABLICAH

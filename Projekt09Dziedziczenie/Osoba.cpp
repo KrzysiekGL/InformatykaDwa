@@ -1,0 +1,13 @@
+#include "Osoba.h"
+
+Osoba::Osoba(int wiek, std::string plec, std::string nazwisko) {
+	this->wiek = wiek;
+	this->plec = plec;
+	this->nazwisko = nazwisko;
+}
+
+void Osoba::drukuj() {
+	std::cout<<"Nazwisko: " << nazwisko
+		<<"\nPlec: " << plec
+		<< "\nWiek: " << wiek << std::endl;
+}
