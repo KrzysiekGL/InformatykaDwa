@@ -16,9 +16,9 @@ protected:
 
 	void setMenuEntrysPosition();
 public:
-	Menu();
+	Menu() {}
 	Menu(sf::Vector2u size);
-	~Menu();
+	~Menu() {}
 
 	void moveSelection(bool up);
 	void draw(sf::RenderWindow& window);

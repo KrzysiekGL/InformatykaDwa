@@ -1,13 +1,13 @@
 #include "Menu.h"
 
-Menu::Menu(){
-}
-
 Menu::Menu(sf::Vector2u size) {
 	this->size = size;
 	if (!font.loadFromFile("fonts/8bitOperatorPlus8-Bold.ttf")) return;
 
-	menu.push_back(sf::Text("Start Game", font));
+	menu.push_back(sf::Text("Start New Game", font));
+	menu.push_back(sf::Text("Load Game", font));
+	menu.push_back(sf::Text("Game Settings", font));
+	menu.push_back(sf::Text("Help", font));
 	menu.push_back(sf::Text("Exit Game", font));
 
 	menu[0].setFillColor(sf::Color::Cyan);
@@ -21,14 +21,10 @@ Menu::Menu(sf::Vector2u size) {
 	selectMenuEntrySound.setBuffer(buffer);
 }
 
-
-Menu::~Menu(){
-}
-
 void Menu::setMenuEntrysPosition() {
 	for (int i = 0; i < menu.size(); ++i) {
 		menu[i].setOrigin(sf::Vector2f(menu[i].getLocalBounds().width/2, menu[i].getLocalBounds().height/2));
-		menu[i].setPosition(sf::Vector2f(size.x / 2, size.y / 3 + size.y / (menu.size() + 1) * i));
+		menu[i].setPosition(sf::Vector2f(size.x / 2, size.y / menu.size() + size.y / (menu.size() + 1) * i));
 	}
 }
 
@@ -38,7 +34,6 @@ void Menu::draw(sf::RenderWindow& window) {
 }
 
 void Menu::moveSelection(bool up) {
-	selectMenuEntrySound.play();
 	if (selectedItem >= 0 && selectedItem < menu.size()) {
 		menu[selectedItem].setFillColor(sf::Color::White);
 
@@ -53,6 +48,7 @@ void Menu::moveSelection(bool up) {
 
 		menu[selectedItem].setFillColor(sf::Color::Cyan);
 	}
+	selectMenuEntrySound.play();
 }
 
 int Menu::getSelectedItem() {
