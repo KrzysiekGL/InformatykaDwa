@@ -17,10 +17,13 @@ pilkarz.drukuj();
 
 std::cout << "Zadanie 3.\n";
 Tablica *array=new Tablica(10);
+std::cout<<"Pierwsze drukowanie\n";
 array->drukuj();
 array->wypelnij();
+std::cout<<"Drugie drukowanie\n";
 array->drukuj();
 delete array;
+std::cout<<"Trzecie drukowanie\n";
 array->drukuj();
 
 std::cout << "Zadanie 4.\n";
